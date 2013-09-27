@@ -6,7 +6,7 @@
 #
 ###################################
 
-# Written by Henrik Fåhraeus, Johan Andersson & Niklas Strid
+# Written by Henrik Fï¿½hraeus, Johan Andersson & Niklas Strid
 
 ########################################
 # HERESIES
@@ -3081,7 +3081,7 @@ character_event = {
 				factor = 2
 				trait = arbitrary
 			}
-			modifier = { #Tweaked by Battle bunny
+			modifier = {
 				factor = 2
 				trait = kind
 			}
@@ -3168,13 +3168,13 @@ character_event = {
 				trait = arbitrary
 			}
 			modifier = {
-				factor = 2
+				factor = 3
 				culture_group = east_slavic # Historical
 				FROM = {
 					religion = orthodox
 				}
 			}
-			modifier = { #Tweaked by Battle bunny
+			modifier = {
 				factor = 1.5
 				NOT = { religion_authority = 0.5 }
 			}
@@ -3189,6 +3189,10 @@ character_event = {
 			modifier = {
 				factor = 1.5
 				NOT = { religion_authority = 0.2 }
+			}
+			modifier = {
+				factor = 0.8
+				NOT = { year = 900 }
 			}
 			modifier = {
 				factor = 1.1
@@ -3227,7 +3231,7 @@ character_event = {
 
 		prestige = -500
 		religion = FROM
-		piety = 250
+		piety = -100
 
 		any_courtier = {
 			limit = { is_close_relative = ROOT }
@@ -3291,6 +3295,22 @@ character_event = {
 			modifier = {
 				factor = 5
 				is_reformed_religion = yes
+			}
+			modifier = {
+				factor = 1.5
+				trait = detached_priest
+			}
+			modifier = {
+				factor = 2
+				trait = martial_cleric
+			}
+			modifier = {
+				factor = 3
+				trait = scholarly_theologian
+			}
+			modifier = {
+				factor = 5
+				trait = mastermind_theologian
 			}
 		}
 		FROM = {
