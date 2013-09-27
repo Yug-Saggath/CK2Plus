@@ -2036,24 +2036,9 @@ character_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 900
+		months = 300
 		modifier = {
-			factor = 1.3
-			location = {
-				NOT = {
-					OR = {
-						owner = {
-							culture = ROOT
-						}
-						owner = {
-							culture_group = ROOT
-						}
-					}
-				}
-			}
-		}
-		modifier = {
-			factor = 0.8
+			factor = 0.9
 			location = {
 				owner = {
 					culture_group = ROOT
@@ -2061,7 +2046,7 @@ character_event = {
 			}
 		}
 		modifier = {
-			factor = 0.7
+			factor = 0.9
 			location = {
 				owner = {
 					culture = ROOT
@@ -2069,71 +2054,39 @@ character_event = {
 			}
 		}
 		modifier = {
-			factor = 0
-			NOT = { opinion = { who = liege value = -100 } }
-		}
-		modifier = {
-			factor = 2
-			NOT = { opinion = { who = liege value = -75 } }
-		}
-		modifier = {
-			factor = 1.5
-			NOT = { opinion = { who = liege value = -50 } }
-		}
-		modifier = {
-			factor = 1.25
-			NOT = { opinion = { who = liege value = -25 } }
-		}
-		modifier = {
-			factor = 0.95
-			opinion = { who = liege value = 25 }
-		}
-		modifier = {
-			factor = 0.90
-			opinion = { who = liege value = 50 }
-		}
-		modifier = {
-			factor = 0.85
-			opinion = { who = liege value = 75 }
-		}
-		modifier = {
-			factor = 0.80
-			opinion = { who = liege value = 100 }
-		}
-		modifier = {
-			factor = 1.25
+			factor = 1.05
 			NOT = { realm_learning = 15 }
 		}
 		modifier = {
-			factor = 1.25
+			factor = 1.05
 			NOT = { realm_learning = 16 }
 		}
 		modifier = {
-			factor = 1.25
+			factor = 1.05
 			NOT = { realm_learning = 17 }
 		}
 		modifier = {
-			factor = 1.25
+			factor = 1.05
 			NOT = { realm_learning = 18 }
 		}
 		modifier = {
-			factor = 1.20
+			factor = 1.05
 			NOT = { realm_learning = 19 }
 		}
 		modifier = {
-			factor = 1.20
+			factor = 1.05
 			NOT = { realm_learning = 20 }
 		}
 		modifier = {
-			factor = 1.20
+			factor = 1.05
 			NOT = { realm_learning = 21 }
 		}
 		modifier = {
-			factor = 1.15
+			factor = 1.05
 			NOT = { realm_learning = 22 }
 		}
 		modifier = {
-			factor = 1.10
+			factor = 1.05
 			NOT = { realm_learning = 23 }
 		}
 		modifier = {
@@ -2149,67 +2102,71 @@ character_event = {
 			realm_learning = 26
 		}
 		modifier = {
-			factor = 0.90
+			factor = 0.95
 			realm_learning = 27
 		}
 		modifier = {
-			factor = 0.90
+			factor = 0.95
 			realm_learning = 28
 		}
 		modifier = {
-			factor = 0.85
+			factor = 0.95
 			realm_learning = 29
 		}
 		modifier = {
-			factor = 0.85
+			factor = 0.9
 			realm_learning = 30
 		}
 		modifier = {
-			factor = 0.80
+			factor = 0.9
 			realm_learning = 31
 		}
 		modifier = {
-			factor = 0.80
+			factor = 0.9
 			realm_learning = 32
 		}
 		modifier = {
-			factor = 0.75
+			factor = 0.9
 			realm_learning = 33
 		}
 		modifier = {
-			factor = 0.75
+			factor = 0.9
 			realm_learning = 34
 		}
 		modifier = {
-			factor = 0.75
+			factor = 0.9
 			realm_learning = 35
 		}
 		modifier = {
-			factor = 0.75
+			factor = 0.9
 			realm_learning = 36
 		}
 		modifier = {
-			factor = 0.75
+			factor = 0.9
 			realm_learning = 37
 		}
 		modifier = {
-			factor = 0.75
+			factor = 0.9
 			realm_learning = 38
 		}
 		modifier = {
-			factor = 1.2
-			religion_authority = 0.6
-		}
-		modifier = {
-			factor = 1.1
-			religion_authority = 0.7
-		}
-		modifier = {
-			factor = 1
-			religion_authority = 0.8
+			factor = 1.5
+			NOT = { religion_authority = 0.5 }
 		}
 		modifier = {
 			factor = 0.9
+			religion_authority = 0.6
+		}
+		modifier = {
+			factor = 0.9
+			religion_authority = 0.7
+		}
+		modifier = {
+			factor = 0.9
+			religion_authority = 0.8
+		}
+		modifier = {
+			factor = 0.8
 			religion_authority = 0.9
 		}
 		modifier = {
@@ -2218,7 +2175,39 @@ character_event = {
 		}
 		modifier = {
 			factor = 0
-			NOT = { religion_authority = 0.5 }
+			NOT = { religion_authority = 0.4 }
+		}
+		modifier = {
+			factor = 0
+			NOT = { opinion = { who = liege value = -100 } }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { opinion = { who = liege value = -75 } }
+		}
+		modifier = {
+			factor = 1.25
+			NOT = { opinion = { who = liege value = -50 } }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { opinion = { who = liege value = -25 } }
+		}
+		modifier = {
+			factor = 0.95
+			opinion = { who = liege value = 25 }
+		}
+		modifier = {
+			factor = 0.95
+			opinion = { who = liege value = 50 }
+		}
+		modifier = {
+			factor = 0.9
+			opinion = { who = liege value = 75 }
+		}
+		modifier = {
+			factor = 0.9
+			opinion = { who = liege value = 100 }
 		}
 	}
 
